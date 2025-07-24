@@ -13,10 +13,14 @@ function App() {
       {loading && <Loading onComplete={() => setLoading(false)} />}
 
       {!loading && (
-        <div className="w-full overflow-x-hidden bg-cream text-brown font-body">
+        <div className="min-h-screen flex flex-col w-full overflow-x-hidden bg-cream text-brown font-body">
           <AuthProvider>
             <Navbar />
-            <MainRoute />
+
+            <main className="flex-1">
+              <MainRoute />
+            </main>
+
             <Footer />
           </AuthProvider>
         </div>
