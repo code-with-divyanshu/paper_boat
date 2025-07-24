@@ -568,9 +568,9 @@ const GetInTouch = () => {
             <div className="bg-gradient-to-br from-peach/30 to-softpink/30 p-4 rounded-3xl shadow-2xl">
               <iframe
                 src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3887.927727335794!2d77.7159082745466!3d12.976474314772458!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae10d5f69b2b45%3A0x9d9e6a90766781a1!2sHector%20Beverages%20(Paperboat)!5e0!3m2!1sen!2sin!4v1753384727300!5m2!1sen!2sin"
-                allowfullscreen=""
+                allowFullScreen=""
                 loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"
+                referrerPolicy="no-referrer-when-downgrade"
                 className="rounded-2xl shadow-xl"
                 width="100%"
                 height="500"

@@ -1,9 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { ScrollToPlugin } from "gsap/ScrollToPlugin";
 import { ProductDatacategories } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
+gsap.registerPlugin(ScrollToPlugin);
 
 const Drinks = () => {
   const containerRef = useRef(null);
@@ -86,26 +88,6 @@ const Drinks = () => {
 
     // Prevent body scroll when modal is open
     document.body.style.overflow = "hidden";
-
-    // Animate modal opening
-    gsap.fromTo(
-      ".modal-overlay",
-      { opacity: 0 },
-      { opacity: 1, duration: 0.3, ease: "power2.out" }
-    );
-
-    gsap.fromTo(
-      ".modal-content",
-      { scale: 0.8, opacity: 0, y: 50 },
-      {
-        scale: 1,
-        opacity: 1,
-        y: 0,
-        duration: 0.5,
-        ease: "back.out(1.7)",
-        delay: 0.1,
-      }
-    );
   };
 
   // Close modal
