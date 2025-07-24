@@ -20,7 +20,7 @@ const Home = () => {
       <HomeProductSection />
       <AttractiveSwiper
         slideData={homeSlideData}
-        url={`./src/assets/notebook_bg.png`}
+        url={`/images/notebook_bg.png`}
       />
       <AnimatedSingleImage />
     </div>
