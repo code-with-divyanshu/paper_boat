@@ -280,7 +280,7 @@ export const ProductDatacategories = [
         id: 3,
         name: "Jaljeera",
         price: 70,
-        image: "/images/trad_jaljeera_200 .png",
+        image: "/images/trad_jaljeera_200.png",
         description:
           "A hot summer day is magnified tenfold in India. The Sun, once a trusted ally, is now a vengeful god charring its antlike populace. Don't worry, he'll calm down in a while. But till he does, what respite does a mortal have against the might of distant nuclear fusion of a main-sequence star that constantly turns hydrogen into helium? (What? We paid attention in school.) The answer descends from the heavens in the form of the beloved Jaljeera drink!",
       },
@@ -335,7 +335,7 @@ export const ProductDatacategories = [
         id: 3,
         name: "Pomegranate with Sabja Seeds",
         price: 110,
-        image: "/images/nata-pomegranate .png",
+        image: "/images/nata-pomegranate.png",
         description:
           "Experience the vibrant burst of flavour with a Pomegranate and Sabja Seeds Drink. A tangy pomegranate fruit drink, enhanced with the pleasant bite of sabja seeds, creates the coolest drink. Enjoy the refreshing taste of this unique blend ñ a perfect companion for moments of pure refreshment. Cheers to a flavourful sip!",
       },
