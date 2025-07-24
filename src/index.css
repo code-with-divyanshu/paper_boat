@@ -1,0 +1,258 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #f37021; /* Bright Paper Boat orange */
+  --color-peach: #fce3ca; /* Light peach background */
+  --color-cream: #fff8f0; /* Creamy off-white background */
+  --color-softpink: #f2d0a9; /* Soft pink/beige highlight */
+  --color-brown: #5d4037; /* Dark brown for text/footer */
+  --color-lightgrey: #ececec; /* Light grey for borders/backgrounds */
+  --color-footer: #eac742;
+
+  --color-glass-bg: rgba(255, 253, 208, 0.4);
+  --color-glass-border: rgba(255, 255, 255, 0.6);
+}
+
+html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+a,
+p,
+div,
+html {
+  font-family: "Patrick Hand", cursive;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: amithen-r;
+  src: url(./font/Amithen.woff);
+}
+
+@font-face {
+  font-family: amithen-b;
+  src: url(./font/Amithen-Extra.woff);
+}
+
+@theme {
+  /* Spacing */
+  --spacing-15: 3.75rem;
+  --spacing-25: 6.25rem;
+  --spacing-30: 7.5rem;
+  --spacing-37-5: 9.375rem;
+}
+
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-20px) translateX(10px) rotate(5deg);
+  }
+}
+
+@keyframes ripple {
+  0% {
+    transform: scale(1);
+    opacity: 0.6;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes border-gradient-move {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 100% 50%;
+  }
+}
+.animated-border {
+  position: relative;
+  z-index: 1;
+}
+.animated-border::after {
+  content: "";
+  position: absolute;
+  inset: -2px;
+  z-index: -1;
+  border-radius: inherit;
+  background: linear-gradient(
+    90deg,
+    #f37021 0%,
+    #f2d0a9 40%,
+    #fce3ca 80%,
+    #f37021 100%
+  );
+  background-size: 200% 200%;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.animated-border.active::after,
+.animated-border:hover::after,
+.animated-border:focus::after {
+  opacity: 1;
+  animation: border-gradient-move 1.5s linear infinite;
+}
+
+/* Add these animations to your global CSS file */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideInFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  from {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromBottom {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes bounceIn {
+  0% {
+    opacity: 0;
+    transform: scale(0.3) rotate(-180deg);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.1) rotate(-90deg);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1) rotate(0deg);
+  }
+}
+
+@keyframes shakeX {
+  0%,
+  100% {
+    transform: translateX(0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-5px);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(5px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.animate-fadeInUp {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+.animate-slideInFromTop {
+  animation: slideInFromTop 0.5s ease-out;
+}
+
+.animate-slideInFromLeft {
+  animation: slideInFromLeft 0.5s ease-out;
+}
+
+.animate-slideInFromRight {
+  animation: slideInFromRight 0.5s ease-out;
+}
+
+.animate-slideInFromBottom {
+  animation: slideInFromBottom 0.5s ease-out;
+}
+
+.animate-bounceIn {
+  animation: bounceIn 1s ease-out;
+}
+
+.animate-shakeX {
+  animation: shakeX 0.6s ease-in-out;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out;
+}
+
+.delay-200 {
+  animation-delay: 0.2s;
+}
+
+.delay-300 {
+  animation-delay: 0.3s;
+}
+
+.delay-400 {
+  animation-delay: 0.4s;
+}
+
+.delay-500 {
+  animation-delay: 0.5s;
+}
+
+.delay-700 {
+  animation-delay: 0.7s;
+}
+
+.delay-1000 {
+  animation-delay: 1s;
+}
