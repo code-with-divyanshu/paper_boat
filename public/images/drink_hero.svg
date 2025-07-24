@@ -1,0 +1,164 @@
+<svg width="1200" height="800" viewBox="0 0 1200 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background Gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#fff8f0;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#fce3ca;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f2d0a9;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Bottle Gradient -->
+    <linearGradient id="bottleGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.9" />
+      <stop offset="50%" style="stop-color:#f8f8f8;stop-opacity:0.8" />
+      <stop offset="100%" style="stop-color:#e8e8e8;stop-opacity:0.7" />
+    </linearGradient>
+    
+    <!-- Orange Label Gradient -->
+    <radialGradient id="orangeGradient" cx="50%" cy="30%" r="70%">
+      <stop offset="0%" style="stop-color:#ff8c42;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#f37021;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#d85d1a;stop-opacity:1" />
+    </radialGradient>
+    
+    <!-- Cap Gradient -->
+    <linearGradient id="capGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff8c42;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#f37021;stop-opacity:1" />
+    </linearGradient>
+    
+    <!-- Shadow Filter -->
+    <filter id="dropShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="4" dy="8" stdDeviation="6" flood-color="#5d4037" flood-opacity="0.3"/>
+    </filter>
+    
+    <!-- Floating Elements Filter -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="1200" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Floating Background Elements -->
+  <circle cx="150" cy="120" r="40" fill="#f37021" opacity="0.1" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0; 10,-10; 0,0" dur="4s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="1050" cy="200" r="60" fill="#f2d0a9" opacity="0.2" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0; -15,8; 0,0" dur="5s" repeatCount="indefinite"/>
+  </circle>
+  
+  <circle cx="200" cy="600" r="25" fill="#fce3ca" opacity="0.3" filter="url(#glow)">
+    <animateTransform attributeName="transform" type="translate" 
+                      values="0,0; 8,12; 0,0" dur="3s" repeatCount="indefinite"/>
+  </circle>
+  
+  <!-- Main Paper Boat Bottle -->
+  <g transform="translate(500, 100)" filter="url(#dropShadow)">
+    <!-- Bottle Body -->
+    <path d="M50 200 L50 480 Q50 500 70 500 L130 500 Q150 500 150 480 L150 200 Z" 
+          fill="url(#bottleGradient)" stroke="#e0e0e0" stroke-width="1"/>
+    
+    <!-- Bottle Neck -->
+    <rect x="80" y="150" width="40" height="50" 
+          fill="url(#bottleGradient)" stroke="#e0e0e0" stroke-width="1"/>
+    
+    <!-- Orange Cap -->
+    <ellipse cx="100" cy="140" rx="30" ry="15" fill="url(#capGradient)"/>
+    <rect x="70" y="125" width="60" height="20" fill="url(#capGradient)" rx="10"/>
+    
+    <!-- Main Orange Circle (Mango) -->
+    <circle cx="100" cy="350" r="45" fill="url(#orangeGradient)"/>
+    
+    <!-- Mango Highlight -->
+    <ellipse cx="85" cy="335" rx="15" ry="20" fill="#ffb366" opacity="0.6"/>
+    
+    <!-- Leaf Detail -->
+    <path d="M120 320 Q135 310 140 325 Q135 340 120 335 Z" 
+          fill="#4a7c59" opacity="0.8"/>
+    
+    <!-- Brand Text Area -->
+    <rect x="60" y="280" width="80" height="40" fill="none"/>
+    
+    <!-- Paper Boat Text (Stylized) -->
+    <text x="100" y="295" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+          fill="#5d4037">paper</text>
+    <text x="100" y="310" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="12" font-weight="bold" 
+          fill="#5d4037">boat</text>
+    
+    <!-- Bottle Reflection -->
+    <rect x="60" y="200" width="8" height="280" 
+          fill="white" opacity="0.3" rx="4"/>
+  </g>
+  
+  <!-- Secondary Bottle (Smaller, Left) -->
+  <g transform="translate(300, 150) scale(0.7)" opacity="0.6" filter="url(#dropShadow)">
+    <path d="M50 200 L50 480 Q50 500 70 500 L130 500 Q150 500 150 480 L150 200 Z" 
+          fill="url(#bottleGradient)" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="80" y="150" width="40" height="50" 
+          fill="url(#bottleGradient)" stroke="#e0e0e0" stroke-width="1"/>
+    <ellipse cx="100" cy="140" rx="30" ry="15" fill="url(#capGradient)"/>
+    <rect x="70" y="125" width="60" height="20" fill="url(#capGradient)" rx="10"/>
+    <circle cx="100" cy="350" r="45" fill="#4a7c59"/>
+    <text x="100" y="295" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+          fill="#5d4037">paper</text>
+    <text x="100" y="308" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="10" font-weight="bold" 
+          fill="#5d4037">boat</text>
+  </g>
+  
+  <!-- Third Bottle (Smaller, Right) -->
+  <g transform="translate(750, 180) scale(0.6)" opacity="0.5" filter="url(#dropShadow)">
+    <path d="M50 200 L50 480 Q50 500 70 500 L130 500 Q150 500 150 480 L150 200 Z" 
+          fill="url(#bottleGradient)" stroke="#e0e0e0" stroke-width="1"/>
+    <rect x="80" y="150" width="40" height="50" 
+          fill="url(#bottleGradient)" stroke="#e0e0e0" stroke-width="1"/>
+    <ellipse cx="100" cy="140" rx="30" ry="15" fill="url(#capGradient)"/>
+    <rect x="70" y="125" width="60" height="20" fill="url(#capGradient)" rx="10"/>
+    <circle cx="100" cy="350" r="45" fill="#8e4ec6"/>
+    <text x="100" y="295" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="9" font-weight="bold" 
+          fill="#5d4037">paper</text>
+    <text x="100" y="306" text-anchor="middle" 
+          font-family="Arial, sans-serif" font-size="9" font-weight="bold" 
+          fill="#5d4037">boat</text>
+  </g>
+  
+  <!-- Decorative Wave Elements -->
+  <path d="M0 650 Q200 620 400 650 T800 650 Q1000 620 1200 650 L1200 800 L0 800 Z" 
+        fill="#f2d0a9" opacity="0.3"/>
+  
+  <path d="M0 680 Q300 650 600 680 T1200 680 L1200 800 L0 800 Z" 
+        fill="#fce3ca" opacity="0.4"/>
+  
+  <!-- Floating Fruit Elements -->
+  <g transform="translate(200, 400)" opacity="0.3">
+    <circle cx="0" cy="0" r="12" fill="#f37021"/>
+    <path d="M8 -8 Q15 -12 18 -5 Q15 2 8 0 Z" fill="#4a7c59"/>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="200,400; 210,390; 200,400" dur="6s" repeatCount="indefinite"/>
+  </g>
+  
+  <g transform="translate(900, 300)" opacity="0.2">
+    <circle cx="0" cy="0" r="15" fill="#8e4ec6"/>
+    <ellipse cx="-5" cy="-3" rx="4" ry="6" fill="#b19cd9" opacity="0.7"/>
+    <animateTransform attributeName="transform" type="translate" 
+                      values="900,300; 890,310; 900,300" dur="4s" repeatCount="indefinite"/>
+  </g>
+  
+  <!-- Subtle Text Overlay -->
+  <text x="600" y="700" text-anchor="middle" 
+        font-family="Georgia, serif" font-size="24" font-weight="300" 
+        fill="#5d4037" opacity="0.4">Traditional Indian Beverages</text>
+</svg>

@@ -308,7 +308,7 @@ const GetInTouch = () => {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-peach via-softpink to-cream overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center bg-[url(/images/phone.png)] bg-cover bg-no-repeat overflow-hidden"
       >
         {/* Floating Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -325,7 +325,7 @@ const GetInTouch = () => {
           <p className="hero-subtitle text-2xl md:text-3xl lg:text-4xl text-brown mb-8 font-bold">
             Let's Create Something Amazing Together
           </p>
-          <p className="hero-description text-lg md:text-xl text-brown/80 mb-12 max-w-3xl mx-auto leading-relaxed">
+          <p className="hero-description text-lg md:text-xl text-primary mb-12 max-w-3xl mx-auto leading-relaxed font-semibold">
             Have a question about our products? Want to collaborate? Or just
             want to share your Paper Boat memories? We'd love to hear from you.
             Our team is here to help make every interaction as refreshing as our
@@ -338,7 +338,7 @@ const GetInTouch = () => {
       <section className="py-32 bg-gradient-to-b from-cream to-lightgrey">
         <div className="container mx-auto px-6">
           <h2 className="reveal-text text-5xl lg:text-6xl font-black text-center text-brown mb-20">
-            How to Reach Us
+            How to <span className="text-primary">Reach</span> Us
           </h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             {contactInfo.map((info, index) => (
@@ -378,7 +378,7 @@ const GetInTouch = () => {
             {/* Form */}
             <div className="form-container relative">
               <h2 className="reveal-text text-5xl lg:text-6xl font-black text-brown mb-8">
-                Send Us a Message
+                Send Us a <span className="text-primary">Message</span>
               </h2>
               <p className="reveal-text text-xl text-brown/80 mb-12 leading-relaxed">
                 Fill out the form below and we'll get back to you within 24
@@ -562,7 +562,7 @@ const GetInTouch = () => {
       <section ref={mapRef} className="py-32 bg-cream">
         <div className="container mx-auto px-6">
           <h2 className="reveal-text text-5xl lg:text-6xl font-black text-center text-brown mb-20">
-            Find Us on the Map
+            Find Us on the <span className="text-primary">Map</span>
           </h2>
           <div className="map-container max-w-6xl mx-auto">
             <div className="bg-gradient-to-br from-peach/30 to-softpink/30 p-4 rounded-3xl shadow-2xl">

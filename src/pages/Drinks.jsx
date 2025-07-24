@@ -211,7 +211,7 @@ const Drinks = () => {
       {/* Hero Section */}
       <section
         ref={heroRef}
-        className="relative min-h-screen flex items-center justify-center bg-gradient-to-br from-peach via-cream to-softpink overflow-hidden"
+        className="relative min-h-screen flex items-center justify-center  bg-[url(/images/drink_hero.svg)] bg-no-repeat bg-cover bg-center bacdro overflow-hidden"
       >
         {/* Floating Background Elements */}
         <div className="absolute inset-0">
