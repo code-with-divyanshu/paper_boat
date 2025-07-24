@@ -79,12 +79,9 @@ const HeroSection = () => {
       >
         <div className="slide w-screen min-h-screen flex items-center justify-center text-4xl flex-shrink-0">
           <picture className="w-full h-full">
-            <source
-              media="(max-width: 767px)"
-              srcSet="./src/assets/home1mb.jpg"
-            />
+            <source media="(max-width: 767px)" srcSet="./images/home1mb.jpg" />
             <img
-              src="./src/assets/home1.png"
+              src="./images/home1.png"
               alt="Paper Boat Heritage"
               className="w-full h-full object-contain mt-15 md:mt-2"
               loading="eager"
@@ -96,10 +93,10 @@ const HeroSection = () => {
           <picture className="w-full h-full">
             <source
               media="(max-width: 767px)"
-              srcSet="./src/assets/Innovation_mb.jpg"
+              srcSet="./images/Innovation_mb.jpg"
             />
             <img
-              src="./src/assets/home2.jpg"
+              src="./images/home2.jpg"
               alt="Paper Boat Innovation"
               className="w-full h-full object-contain mt-15 md:mt-2"
               loading="lazy"
@@ -109,12 +106,9 @@ const HeroSection = () => {
 
         <div className="slide w-screen min-h-screen flex items-center justify-center text-4xl flex-shrink-0">
           <picture className="w-full h-full">
-            <source
-              media="(max-width: 767px)"
-              srcSet="./src/assets/home3mb.jpg"
-            />
+            <source media="(max-width: 767px)" srcSet="./images/home3mb.jpg" />
             <img
-              src="./src/assets/home3.png"
+              src="./images/home3.png"
               alt="Paper Boat Experience"
               className="w-full h-full object-contain mt-15 md:mt-2"
               loading="lazy"
@@ -124,12 +118,9 @@ const HeroSection = () => {
 
         <div className="slide w-screen min-h-screen flex items-center justify-center text-4xl flex-shrink-0">
           <picture className="w-full h-full">
-            <source
-              media="(max-width: 767px)"
-              srcSet="./src/assets/home4mb.jpg"
-            />
+            <source media="(max-width: 767px)" srcSet="./images/home4mb.jpg" />
             <img
-              src="./src/assets/home4.png"
+              src="./images/home4.png"
               alt="Paper Boat Quality"
               className="w-full h-full object-contain mt-15 md:mt-2"
               loading="lazy"

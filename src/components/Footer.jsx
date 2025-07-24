@@ -76,7 +76,7 @@ const Footer = () => {
 
       {/* Background decoration */}
       <img
-        src="./src/assets/footer_svg.svg"
+        src="./images/footer_svg.svg"
         alt="footer background"
         className="w-full"
       />
@@ -95,7 +95,7 @@ const Footer = () => {
               <div className="flex items-center gap-3 mb-4">
                 {/* PaperBoat Logo Image */}
                 <img
-                  src="./src/assets/paper_boat_logo-logo.png"
+                  src="./images/paper_boat_logo-logo.png"
                   alt="PaperBoat Logo"
                   className="w-30 h-30 object-contain"
                 />
@@ -174,7 +174,7 @@ const Footer = () => {
               <div className="flex flex-col items-center group">
                 <div className="bg-cream/10 rounded-2xl p-4 hover:bg-cream/20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 w-full">
                   <img
-                    src="./src/assets/paper_boat_logo-img.png"
+                    src="./images/paper_boat_logo-img.png"
                     alt="PaperBoat Drinks"
                     className="w-20 h-20 object-contain mx-auto"
                   />
@@ -187,7 +187,7 @@ const Footer = () => {
               <div className="flex flex-col items-center group">
                 <div className="bg-cream/10 rounded-2xl p-4 hover:bg-cream/20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 w-full">
                   <img
-                    src="./src/assets/swing_logo.png"
+                    src="./images/swing_logo.png"
                     alt="Swing"
                     className="w-20 h-20 object-contain mx-auto"
                   />
@@ -198,7 +198,7 @@ const Footer = () => {
               <div className="flex flex-col items-center group">
                 <div className="bg-cream/10 rounded-2xl p-4 hover:bg-cream/20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 w-full">
                   <img
-                    src="./src/assets/swing_jeera_logo.png"
+                    src="./images/swing_jeera_logo.png"
                     alt="Swing Jeera"
                     className="w-20 h-20 object-contain mx-auto"
                   />
@@ -211,7 +211,7 @@ const Footer = () => {
               <div className="flex flex-col items-center group">
                 <div className="bg-cream/10 rounded-2xl p-4 hover:bg-cream/20 transition-all duration-300 group-hover:scale-110 group-hover:-translate-y-2 w-full">
                   <img
-                    src="./src/assets/zero_logo.png"
+                    src="./images/zero_logo.png"
                     alt="Zero"
                     className="w-20 h-20 object-contain mx-auto"
                   />

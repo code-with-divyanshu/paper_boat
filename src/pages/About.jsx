@@ -402,7 +402,7 @@ const About = () => {
             <div className="hero-image-container h-64 lg:h-full relative">
               <img
                 className="hero-image-block object-cover object-center "
-                src="/src/assets/bulb.png"
+                src="/images/bulb.png"
                 alt="Paper Boat Story - Traditional Indian Drinks"
               />
 
@@ -453,7 +453,7 @@ const About = () => {
             <div className="story-image relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-transparent rounded-3xl transform rotate-3"></div>
               <img
-                src="/src/assets/all_product.jpeg"
+                src="/images/all_product.jpeg"
                 alt="Paper Boat Story"
                 className="relative w-full h-auto rounded-3xl shadow-2xl transform hover:scale-105 transition-transform duration-500"
               />
@@ -558,7 +558,7 @@ const About = () => {
               <div className="relative bg-gradient-to-b from-cream to-peach/50 rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:rotate-2 transition-all duration-500 border border-softpink/50">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/src/assets/neeraj-kakkar.jpg"
+                    src="/images/neeraj-kakkar.jpg"
                     alt="Neeraj Kakkar"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -604,7 +604,7 @@ const About = () => {
               <div className="relative bg-gradient-to-b from-cream to-peach/50 rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:rotate-2 transition-all duration-500 border border-softpink/50">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/src/assets/neeraj-biyani.jpg"
+                    src="/images/neeraj-biyani.jpg"
                     alt="Neeraj Biyani"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -651,7 +651,7 @@ const About = () => {
               <div className="relative bg-gradient-to-b from-cream to-peach/50 rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:rotate-2 transition-all duration-500 border border-softpink/50">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/src/assets/james-nuttall.jpg"
+                    src="/images/james-nuttall.jpg"
                     alt="James Nuttall"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />
@@ -698,7 +698,7 @@ const About = () => {
               <div className="relative bg-gradient-to-b from-cream to-peach/50 rounded-3xl shadow-xl overflow-hidden transform hover:scale-105 hover:rotate-2 transition-all duration-500 border border-softpink/50">
                 <div className="relative overflow-hidden">
                   <img
-                    src="/src/assets/suhas-misra.jpg"
+                    src="/images/suhas-misra.jpg"
                     alt="Suhas Misra"
                     className="w-full h-80 object-cover group-hover:scale-110 transition-transform duration-700"
                   />

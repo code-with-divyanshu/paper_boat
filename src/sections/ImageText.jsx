@@ -71,7 +71,7 @@ const ImageTextAnimate = () => {
           <div className="absolute inset-0 bg-primary/20 rounded-2xl blur-xl scale-110"></div>
           <img
             ref={imgRef}
-            src="/src/assets/section_2_img.png"
+            src="/images/section_2_img.png"
             alt="Animated visual"
             className="relative w-full h-auto object-cover rounded-2xl shadow-2xl border-4 border-primary/30 backdrop-blur-sm"
           />

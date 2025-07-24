@@ -41,8 +41,8 @@ const AnimatedSingleImage = () => {
     }
   }, [isMobile]);
 
-  const desktopImage = "./src/assets/how_to_make_boat.jpg";
-  const mobileImage = "./src/assets/how_to_make_mb.jpg";
+  const desktopImage = "./images/how_to_make_boat.jpg";
+  const mobileImage = "./images/how_to_make_mb.jpg";
 
   return (
     <div className="w-full h-full relative overflow-hidden mt-20">

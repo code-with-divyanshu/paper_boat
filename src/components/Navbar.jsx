@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Logo */}
         <NavLink to="/" className="relative group">
           <img
-            src="src/assets/paper_boat_logo-logo.png"
+            src="images/paper_boat_logo-logo.png"
             className="w-24 md:w-28 aspect-square object-contain transition-transform duration-300 group-hover:scale-105 group-hover:rotate-2"
             alt="logo"
           />

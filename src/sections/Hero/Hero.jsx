@@ -190,7 +190,7 @@ const PaperBoatScrollHero = () => {
       {/* Fixed Hero Section */}
       <div className=" inset-0 w-full h-screen flex items-center justify-center pt-20">
         {/* Dynamic Background */}
-        <div className="absolute top-0 inset-0 bg-[url(./src/assets/tree_bg.png)] transition-all duration-1000 bg-no-repeat">
+        <div className="absolute top-0 inset-0 bg-[url(./images/tree_bg.png)] transition-all duration-1000 bg-no-repeat">
           {/* Background Particles */}
           {[...Array(6)].map((_, i) => (
             <div
