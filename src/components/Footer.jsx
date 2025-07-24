@@ -83,8 +83,6 @@ const Footer = () => {
 
       <div className="relative text-xl">
         <div className="absolute inset-0 bg-footer text-primary text-xl"></div>
-        <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary via-peach to-softpink"></div>
-
         {/* Floating shapes with glass effect */}
         <div className="absolute top-10 left-10 w-20 h-20 bg-primary/10 rounded-full blur-xl animate-pulse"></div>
         <div className="absolute bottom-10 right-10 w-32 h-32 bg-peach/15 rounded-full blur-xl animate-pulse delay-700"></div>
