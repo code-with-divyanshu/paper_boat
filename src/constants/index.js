@@ -1,6 +1,6 @@
-// Make sure you import the icons here
-import { IoLogIn } from "react-icons/io5"; // Assuming io5 for IoLogIn
+import { IoLogIn } from "react-icons/io5";
 import { FaUserPlus } from "react-icons/fa";
+import { FaStar, FaLeaf, FaHeart } from "react-icons/fa";
 
 export const publicLinks = [
   { id: 1, link: "/", name: "Home" },
@@ -12,6 +12,118 @@ export const publicLinks = [
 export const authLinks = [
   { id: 5, link: "/login", name: "Login", icon: IoLogIn },
   { id: 6, link: "/signup", name: "Sign Up", icon: FaUserPlus },
+];
+
+// hero section data
+
+export const heroProductsData = [
+  {
+    name: "Traditional Drinks",
+    accentColor: "primary",
+    image: "/src/assets/treditional_tile.png",
+    description: "Authentic traditional flavors",
+  },
+  {
+    name: "Sip and Snack",
+    accentColor: "primary",
+    description: "Perfect snacking companion",
+    image: "src/assets/sip_snack_tile.png",
+  },
+  {
+    name: "Vitamin D Drink",
+    accentColor: "primary",
+    image: "/src/assets/vitamin_tile.png",
+    description: "Healthy vitamin enriched drink",
+  },
+  {
+    name: "Low Sugar",
+    accentColor: "primary",
+    description: "Health conscious choice",
+    image: "src/assets/low_sugar_tile.png",
+  },
+  {
+    name: "Fruit Juices",
+    accentColor: "primary",
+    description: "Fresh fruit extracts",
+    image: "src/assets/swing_tile.png",
+  },
+  {
+    name: "Coconut Water",
+    accentColor: "primary",
+    image: "src/assets/Coconut_Water.png",
+    description: "Natural coconut refreshment",
+  },
+];
+
+// home product section data
+
+export const productsHomeData = [
+  {
+    id: 1,
+    name: "Traditional Drinks",
+    bgcolor: "from-[#849C3A]",
+    image: "/src/assets/treditional_tile.png",
+    description: "Authentic traditional flavors",
+    price: "₹25-35",
+    tag: "Heritage",
+    icon: FaStar,
+    tagColor: "bg-primary",
+  },
+  {
+    id: 2,
+    name: "Sip and Snack",
+    bgcolor: "from-[#B1506B]",
+    description: "Perfect snacking companion",
+    image: "/src/assets/sip_snack_tile.png",
+    price: "₹30-40",
+    tag: "Combo",
+    icon: FaHeart,
+    tagColor: "bg-brown",
+  },
+  {
+    id: 3,
+    name: "Vitamin D Drink",
+    bgcolor: "from-[#849C3A]",
+    image: "/src/assets/vitamin_tile.png",
+    description: "Healthy vitamin enriched drink",
+    price: "₹35-45",
+    tag: "Healthy",
+    icon: FaLeaf,
+    tagColor: "bg-primary",
+  },
+  {
+    id: 4,
+    name: "Low Sugar",
+    bgcolor: "from-[#B1506B]",
+    description: "Health conscious choice",
+    image: "/src/assets/low_sugar_tile.png",
+    price: "₹28-38",
+    tag: "Diet",
+    icon: FaHeart,
+    tagColor: "bg-brown",
+  },
+  {
+    id: 5,
+    name: "Fruit Juices",
+    bgcolor: "from-[#B1506B]",
+    description: "Fresh fruit extracts",
+    image: "/src/assets/swing_tile.png",
+    price: "₹25-35",
+    tag: "Fresh",
+    icon: FaStar,
+    tagColor: "bg-primary",
+  },
+  {
+    id: 6,
+    name: "Coconut Water",
+    bgcolor: "from-[#849C3A]",
+    image: "/src/assets/Coconut_Water.png",
+    description: "Natural coconut refreshment",
+    price: "₹20-30",
+    tag: "Natural",
+    icon: FaLeaf,
+    tagColor: "bg-brown",
+  },
 ];
 
 // home section slide data component
