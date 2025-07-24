@@ -5,8 +5,13 @@ import AttractiveSwiper from "../components/Slider";
 import { homeSlideData } from "../constants";
 import AnimatedSingleImage from "../components/AnimatedSingleImage";
 import ImageTextAnimate from "../sections/ImageText";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   return (
     <div>
       <PaperBoatHero />
