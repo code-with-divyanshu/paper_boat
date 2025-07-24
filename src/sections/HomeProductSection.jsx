@@ -2,7 +2,7 @@ import { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Link } from "react-router-dom";
-import { FaArrowRight, FaStar, FaLeaf, FaHeart } from "react-icons/fa";
+import { FaArrowRight } from "react-icons/fa";
 import { productsHomeData } from "../constants";
 
 gsap.registerPlugin(ScrollTrigger);
