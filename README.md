@@ -195,6 +195,6 @@ I recreated the Paper Boat website to explore **modern design trends, smooth ani
 **Email:** divyanshubatwal67@gmail.com  
 **Portfolio:** [https://devloper-divyanshu.netlify.app/](https://devloper-divyanshu.netlify.app/)  
 **GitHub:** [https://github.com/code-with-divyanshu](https://github.com/code-with-divyanshu)  
-**Website:** [https://paperboatdrinks.com](https://paperboatdrinks.com)
+**Website:** [https://paper-boat-alpha.vercel.app/](https://paper-boat-alpha.vercel.app/)
 
 ---
