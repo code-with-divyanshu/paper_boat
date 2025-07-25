@@ -16,29 +16,25 @@ const PaperBoatScrollHero = () => {
 
   // Preload all images on component mount
   useEffect(() => {
-    const preloadImages = async () => {
-      const imagePromises = heroProductsData.map((product, index) => {
-        return new Promise((resolve) => {
-          if (product.image) {
-            const img = new Image();
-            img.onload = () => {
-              setImagesLoaded((prev) => ({ ...prev, [index]: true }));
-              resolve();
-            };
-            img.onerror = () => {
-              console.warn(`Failed to load image: ${product.image}`);
-              setImagesLoaded((prev) => ({ ...prev, [index]: false }));
-              resolve();
-            };
-            img.src = product.image;
-          } else {
+    const preloadImages = () => {
+      heroProductsData.forEach((product, index) => {
+        if (product.image) {
+          const link = document.createElement("link");
+          link.rel = "preload";
+          link.as = "image";
+          link.href = product.image;
+          link.onload = () => {
             setImagesLoaded((prev) => ({ ...prev, [index]: true }));
-            resolve();
-          }
-        });
+          };
+          link.onerror = () => {
+            console.warn(`Failed to preload image: ${product.image}`);
+            setImagesLoaded((prev) => ({ ...prev, [index]: false }));
+          };
+          document.head.appendChild(link);
+        } else {
+          setImagesLoaded((prev) => ({ ...prev, [index]: true }));
+        }
       });
-
-      await Promise.all(imagePromises);
     };
 
     preloadImages();
